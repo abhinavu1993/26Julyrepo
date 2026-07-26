@@ -1,0 +1,7 @@
+title = "Custom Gitleaks Config"
+
+[[rules]]
+id = "generic-api-key"
+description = "Generic API Key"
+regex = '''(?i)(api[_-]?key|secret)[=:]\s*['"]?[0-9a-zA-Z]{32,}['"]?'''
+tags = ["generic", "api"]
